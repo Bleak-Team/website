@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // 0. Detecção Automática do Tema do Sistema
+    const htmlElement = document.documentElement;
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function applySystemTheme(e) {
+        if (e.matches) {
+            htmlElement.classList.add('dark-mode');
+        } else {
+            htmlElement.classList.remove('dark-mode');
+        }
+    }
+
+    // Aplica o estado inicial baseado na preferência atual do sistema
+    applySystemTheme(mediaQuery);
+
+    // Ouve alterações em tempo real caso o usuário mude o tema do sistema operacional/navegador
+    mediaQuery.addEventListener('change', applySystemTheme);
+
     // 1. Scroll Fade-in Observer
     const faders = document.querySelectorAll('.fade-in');
     const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -40px 0px" };
