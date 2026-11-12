@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashfield | Bleak Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Bleak<span>Team</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="ashfield.html" class="active">Jogos</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="index.html#team">Equipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="fade-in">
+            <span class="game-badge">Em Desenvolvimento</span>
+            <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Ashfield</h1>
+        </div>
+
+        <!-- Banner / Trailer Principal -->
+        <div class="game-hero-banner fade-in">
+            <div class="media-placeholder" style="font-size: 1.1rem;">[ Espaço para Capa Principal ou Embed do Trailer Oficial ]</div>
+        </div>
+
+        <!-- Detalhes e Ficha Técnica -->
+        <div class="game-detail-grid fade-in">
+            <div class="game-description">
+                <h2>Sobre o Jogo</h2>
+                <p>Ambientado no início dos anos 2000, <strong>Ashfield</strong> coloca você no papel de Jade Graves, uma jovem garçonete presa em uma pequena cidade americana envolta por uma névoa inexplicável e silenciosa.</p>
+                <p>Inspirado nos clássicos do survival horror de quinta e sexta geração de consoles, o jogo resgata ângulos de câmera cinematográficos, gerenciamento rigoroso de inventário e uma narrativa psicológica densa.</p>
+
+                <div class="pillars-grid">
+                    <div class="pillar-box">
+                        <h4>Atmosfera Retrô Autêntica</h4>
+                        <p>Estética inspirada nas limitações de hardware do PlayStation 2, com paletas dessaturadas e iluminação opressiva.</p>
+                    </div>
+                    <div class="pillar-box">
+                        <h4>Terror Psicológico</h4>
+                        <p>O medo nasce da sugestão, do isolamento e da dúvida sobre o que é real dentro dos corredores da cidade.</p>
+                    </div>
+                    <div class="pillar-box">
+                        <h4>Exploração & Quebra-Cabeças</h4>
+                        <p>Investigue documentos, mapas locais e interaja com mecanismos analógicos para destrancar novas áreas.</p>
+                    </div>
+                    <div class="pillar-box">
+                        <h4>Sobrevivência Tática</h4>
+                        <p>Munição e suprimentos médicos são extremamente limitados. Saiba quando fugir e quando confrontar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barra Lateral: Ficha, Lojas, Áudio, Press Kit e Créditos -->
+            <aside>
+                <div class="sidebar-box">
+                    <h3>Ficha Técnica</h3>
+                    <ul class="studio-specs" style="border-top: none; padding-top: 0;">
+                        <li>Status: <span>Em Produção</span></li>
+                        <li>Gênero: <span>Survival Horror</span></li>
+                        <li>Plataformas: <span>Windows / Linux</span></li>
+                        <li>Engine: <span>Godot Engine</span></li>
+                    </ul>
+
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;">
+                        <a href="#" target="_blank" class="btn-primary">Adicionar à Wishlist (Steam)</a>
+                        <a href="#" target="_blank" class="store-btn">Baixar Demo no Itch.io</a>
+                        <a href="#" download class="store-btn" style="border-style: dashed;">Baixar Press Kit (.ZIP)</a>
+                    </div>
+
+                    <!-- Player de Áudio Nativo -->
+                    <div class="audio-player-box">
+                        <label>Amostra da Trilha Sonora (Tema Principal):</label>
+                        <audio controls>
+                            <!-- Adicione o caminho do seu arquivo .mp3 ou .ogg abaixo -->
+                            <source src="audio/ashfield-theme.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    </div>
+                </div>
+
+                <!-- Créditos Específicos deste Jogo -->
+                <div class="sidebar-box">
+                    <h3>Créditos no Projeto</h3>
+                    <ul class="studio-specs" style="border-top: none; padding-top: 0;">
+                        <li>Direção & Código: <span>Matheus</span></li>
+                        <li>Arte 3D & Cenários: <span>Integrante 02</span></li>
+                        <li>Áudio & Música: <span>Integrante 03</span></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Seção de Devlog Integrada na Parte Inferior da Página do Jogo -->
+        <section id="devlog" class="devlog-section fade-in">
+            <h2 class="section-title">Diário de Desenvolvimento (Devlog)</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Acompanhe as etapas técnicas, avanços de arte e atualizações de produção de Ashfield.</p>
+
+            <div class="devlog-timeline">
+                <!-- Post 1 (Mais recente) -->
+                <article class="devlog-entry">
+                    <div class="devlog-meta">
+                        <span class="devlog-tag">v0.3 • Level Design</span>
+                        <span>Novembro de 2026</span>
+                    </div>
+                    <h4>Bloqueio arquitetônico e sistema de câmeras fixas</h4>
+                    <p>Concluímos a estruturação espacial das primeiras áreas internas utilizando blocos CSG na Godot Engine. Implementamos transições suaves entre câmeras fixas e ajustamos o pós-processamento para simular a profundidade de cor característica dos consoles clássicos.</p>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="devlog-entry">
+                    <div class="devlog-meta">
+                        <span class="devlog-tag">v0.2 • Narrativa & Lore</span>
+                        <span>Outubro de 2026</span>
+                    </div>
+                    <h4>Definição dos personagens centrais e roteiro inicial</h4>
+                    <p>Finalizamos o arco narrativo do primeiro ato envolvendo a protagonista Jade Graves e o Dr. Daniel Ashford, estabelecendo a atmosfera de suspense psicológico que guiará a exploração pela cidade.</p>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="devlog-entry">
+                    <div class="devlog-meta">
+                        <span class="devlog-tag">v0.1 • Protótipo</span>
+                        <span>Setembro de 2026</span>
+                    </div>
+                    <h4>Início da produção e testes de movimentação</h4>
+                    <p>Estabelecemos a base do projeto e testamos os controles de movimentação em ambientes 3D, focando em peso, resposta tátil e imersão sonora.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fade-in">
+        <div class="footer-info">
+            <h4>Bleak Team</h4>
+            <p>&copy; 2026 Bleak Team. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-contact">
+            <p>Localização: <strong>Brasil</strong></p>
+            <p>Contato Comercial / Imprensa:</p>
+            <a href="mailto:contato@bleakteam.com">contato@bleakteam.com</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
