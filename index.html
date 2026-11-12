@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleak Team | Estúdio de Jogos de Terror</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Bleak<span>Team</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="ashfield.html">Jogos</a></li>
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero & Sobre Integrados no Topo -->
+        <section class="hero-about fade-in">
+            <div class="hero-content">
+                <h1>Descubra o medo em sua forma mais pura.</h1>
+                <p>Somos um estúdio independente brasileiro especializado no desenvolvimento de experiências imersivas de terror psicológico, narrativas atmosféricas e tensão visceral.</p>
+                <a href="#games" class="btn-primary">Explorar Projetos</a>
+            </div>
+            
+            <div class="about-card">
+                <h3>O Estúdio</h3>
+                <p><strong>Bleak Team</strong> busca explorar o terror através da criação de histórias únicas e imersivas, criando mundos que desafiam a sanidade dos personagens que nelas vivem.</p>
+                <ul class="studio-specs">
+                    <li>Localização: <span>Brasil</span></li>
+                    <li>Gênero: <span>Terror Psicológico</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Vitrine de Jogos -->
+        <div id="games">
+            <h2 class="section-title fade-in">Nossos Jogos</h2>
+
+            <!-- Jogos em Desenvolvimento -->
+            <h3 class="category-subtitle fade-in">Em Desenvolvimento</h3>
+
+            <div class="game-card fade-in">
+                <!-- Carrossel de Mídia (Trailer + 3 Imagens) -->
+                <div class="game-media-container">
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+
+                    <div class="carousel-slide active" onclick="window.location.href='ashfield.html'">
+                        <div class="media-placeholder">[ Trailer Oficial / Teaser ]</div>
+                    </div>
+                    <div class="carousel-slide" onclick="window.location.href='ashfield.html'">
+                        <div class="media-placeholder">[ Screenshot 01 - Clique para detalhes ]</div>
+                    </div>
+                    <div class="carousel-slide" onclick="window.location.href='ashfield.html'">
+                        <div class="media-placeholder">[ Screenshot 02 - Clique para detalhes ]</div>
+                    </div>
+                    <div class="carousel-slide" onclick="window.location.href='ashfield.html'">
+                        <div class="media-placeholder">[ Screenshot 03 - Clique para detalhes ]</div>
+                    </div>
+                </div>
+
+                <!-- Informações e Elevator Pitch do Jogo -->
+                <div class="game-info">
+                    <div>
+                        <span class="game-badge">Em Produção</span>
+                        <h3 onclick="window.location.href='ashfield.html'">Ashfield</h3>
+                        <p class="elevator-pitch">
+                            Investigue os segredos sombrios de uma pequena cidade americana isolada nos anos 2000. Lidando com escassez de recursos, quebra-cabeças atmosféricos e escolhas críticas, sua única certeza é que a névoa esconde algo implacável.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="store-links">
+                            <a href="#" target="_blank" class="store-btn">Itch.io</a>
+                            <a href="#" target="_blank" class="store-btn">Steam</a>
+                        </div>
+                        <a href="ashfield.html" class="btn-primary" style="width: 100%;">Página Detalhada & Devlog</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jogos Lançados -->
+            <h3 class="category-subtitle fade-in" style="margin-top: 4rem;">Lançados</h3>
+            <div class="game-card fade-in" style="opacity: 0.75;">
+                <div class="game-media-container">
+                    <div class="media-placeholder">[ Em breve novos títulos lançados ]</div>
+                </div>
+                <div class="game-info">
+                    <div>
+                        <span class="game-badge" style="background: rgba(82, 99, 102, 0.15); color: var(--text-muted);">Futuro Lançamento</span>
+                        <h3>Próximos Projetos</h3>
+                        <p class="elevator-pitch">
+                            Novas experiências aterrorizantes estão sendo gestadas nas sombras pelo estúdio. Fique atento às nossas atualizações.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Equipe e Portfólio dos Membros -->
+        <section id="team" class="team-section fade-in">
+            <h2 class="section-title">Equipe & Créditos</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2.5rem; max-width: 700px;">
+                Conheça os desenvolvedores e artistas por trás do Bleak Team. Clique nos links abaixo de cada integrante para acessar seus portfólios individuais e repositórios.
+            </p>
+
+            <div class="team-grid">
+                <!-- Membro 1 -->
+                <div class="member-card">
+                    <div>
+                        <div class="member-avatar">MT</div>
+                        <h4>Matheus</h4>
+                        <div class="member-role">Game Design, Programação & Direção</div>
+                        <p class="member-bio">Responsável pela arquitetura de sistemas na Godot Engine, mecânicas de câmera fixa, narrativa e direção geral dos projetos.</p>
+                    </div>
+                    <div class="member-links">
+                        <a href="#" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">Itch.io</a>
+                    </div>
+                </div>
+
+                <!-- Membro 2 (Exemplo editável) -->
+                <div class="member-card">
+                    <div>
+                        <div class="member-avatar">02</div>
+                        <h4>Integrante 02</h4>
+                        <div class="member-role">Arte 3D & Level Design</div>
+                        <p class="member-bio">Modelagem low-poly retrô, texturização atmosférica, iluminação e construção de cenários no Blender.</p>
+                    </div>
+                    <div class="member-links">
+                        <a href="#" target="_blank">ArtStation</a>
+                        <a href="#" target="_blank">Portfólio</a>
+                    </div>
+                </div>
+
+                <!-- Membro 3 (Exemplo editável) -->
+                <div class="member-card">
+                    <div>
+                        <div class="member-avatar">03</div>
+                        <h4>Integrante 03</h4>
+                        <div class="member-role">Sound Design & Trilha Sonora</div>
+                        <p class="member-bio">Criação de paisagens sonoras perturbadoras, efeitos foley e composição musical minimalista.</p>
+                    </div>
+                    <div class="member-links">
+                        <a href="#" target="_blank">SoundCloud</a>
+                        <a href="#" target="_blank">Portfólio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé / Contato -->
+    <footer class="fade-in">
+        <div class="footer-info">
+            <h4>Bleak Team</h4>
+            <p>&copy; 2026 Bleak Team. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-contact">
+            <p>Localização: <strong>Brasil</strong></p>
+            <p>Contato Comercial / Imprensa:</p>
+            <a href="mailto:contato@bleakteam.com">contato@bleakteam.com</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

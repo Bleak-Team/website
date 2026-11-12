@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | Bleak Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Bleak<span>Team</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="ashfield.html">Jogos</a></li>
+                    <li><a href="gallery.html" class="active">Galeria</a></li>
+                    <li><a href="index.html#team">Equipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="fade-in">
+            <h2 class="section-title">Galeria de Arte & Bastidores</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Explore capturas de tela, artes conceituais e estudos de modelagem 3D produzidos pela equipe. Clique em qualquer item para ampliar.</p>
+        </div>
+
+        <!-- Botões de Filtro -->
+        <div class="gallery-filters fade-in">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="screenshots">Screenshots</button>
+            <button class="filter-btn" data-filter="concept">Concept Art</button>
+            <button class="filter-btn" data-filter="3d">Modelagem 3D</button>
+        </div>
+
+        <!-- Grid da Galeria -->
+        <div class="gallery-grid fade-in">
+            <!-- Item 1 -->
+            <div class="gallery-item" data-category="screenshots" data-title="Corredor Principal - Ashfield" data-author="Direção de Arte: Bleak Team">
+                <div class="gallery-thumb">
+                    <!-- Quando adicionar sua foto, use: <img src="images/foto1.jpg" alt="Corredor"> -->
+                    [ Screenshot 01 - Clique para ampliar ]
+                </div>
+                <div class="gallery-caption">
+                    <h4>Corredor Principal - Ashfield</h4>
+                    <span>Screenshot • In-Engine</span>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="gallery-item" data-category="concept" data-title="Estudo de Personagem: Jade Graves" data-author="Concept Art: Integrante 02">
+                <div class="gallery-thumb">
+                    [ Concept Art 01 - Clique para ampliar ]
+                </div>
+                <div class="gallery-caption">
+                    <h4>Estudo de Personagem: Jade Graves</h4>
+                    <span>Concept Art • Ilustração</span>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="gallery-item" data-category="3d" data-title="Topologia e UV Unwrap - Cenário Urbano" data-author="Modelagem 3D: Integrante 02">
+                <div class="gallery-thumb">
+                    [ Modelo 3D 01 - Clique para ampliar ]
+                </div>
+                <div class="gallery-caption">
+                    <h4>Topologia e UV Unwrap - Cenário</h4>
+                    <span>Modelagem 3D • Blender</span>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="gallery-item" data-category="screenshots" data-title="Teste de Iluminação Volumétrica" data-author="Level Design: Matheus">
+                <div class="gallery-thumb">
+                    [ Screenshot 02 - Clique para ampliar ]
+                </div>
+                <div class="gallery-caption">
+                    <h4>Teste de Iluminação Volumétrica</h4>
+                    <span>Screenshot • Godot Engine</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Lightbox (Tela Cheia) -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button id="lightbox-close" class="lightbox-close">&times;</button>
+            <div id="lightbox-media" class="lightbox-media"></div>
+            <div class="lightbox-details">
+                <div>
+                    <h4 id="lightbox-title" style="margin-bottom: 0.25rem;">Título</h4>
+                    <span id="lightbox-author" style="font-size: 0.85rem; color: var(--text-muted);">Autor</span>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Pressione ESC para fechar</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fade-in">
+        <div class="footer-info">
+            <h4>Bleak Team</h4>
+            <p>&copy; 2026 Bleak Team. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-contact">
+            <p>Localização: <strong>Brasil</strong></p>
+            <p>Contato Comercial / Imprensa:</p>
+            <a href="mailto:contato@bleakteam.com">contato@bleakteam.com</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
